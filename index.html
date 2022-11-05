@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div style="width: 40%">
+      <h4
+        style="
+          background-color: #00ccff;
+          text-align: center;
+          border-radius: 5px;
+        "
+      >
+        Italy Tourism
+      </h4>
+      <table>
+        <tr>
+          <td>Name</td>
+          <td><input type="text" /></td>
+        </tr>
+        <tr>
+          <td>Phone no</td>
+          <td><input type="number" /></td>
+        </tr>
+        <tr>
+          <td>Email Id</td>
+          <td><input type="email" name="" id="" /></td>
+        </tr>
+        <tr>
+          <td>Number of persons</td>
+          <td><input type="number" name="" id="persons" /></td>
+        </tr>
+        <tr>
+          <td>Prefer Stay</td>
+          <td>
+            <div>
+              <input
+                type="radio"
+                name="stay"
+                id="yes"
+                value="yes"
+                onchange="disableNoOfDaysStay()"
+              />
+              <label for="yes">yes</label>
+              <input
+                type="radio"
+                name="stay"
+                id="no"
+                value="no"
+                onchange="disableNoOfDaysStay()"
+              />
+              <label for="no">no</label>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>Number of Days Stay</td>
+          <td><input type="number" name="" id="daysStay" /></td>
+        </tr>
+        <tr>
+          <td>Places you would like to visit</td>
+          <td>
+            <input
+              type="checkbox"
+              name=""
+              id="po0"
+              value="Places Of Pilgrimage"
+            />
+            <label>Places of Pilgrimage</label>
+            <br />
+            <input
+              type="checkbox"
+              name=""
+              id="po1"
+              value="Places Of Heritage"
+            />
+            <label>Places of Heritage</label>
+            <br />
+            <input type="checkbox" name="" id="po2" value="Hills" />
+            <label>Hills</label>
+            <br />
+            <input type="checkbox" name="" id="po3" value="Falls" />
+            <label>Falls</label>
+            <br />
+            <input type="checkbox" name="" id="po4" value="Beach" />
+            <label>Beach</label>
+            <br />
+            <input
+              type="checkbox"
+              name=""
+              id="po5"
+              value="Places Of Adventures"
+            />
+            <label>Places of Adventures</label>
+            <br />
+          </td>
+        </tr>
+        <br />
+        <tr>
+          <td colspan="2">
+            <button
+              style="
+                padding: 0 150px;
+                background-color: #00ccff;
+                border-radius: 5px;
+              "
+              onclick="calculateCost()"
+            >
+              calculate Cost
+            </button>
+          </td>
+        </tr>
+      </table>
+      <p id="msg" style="text-align: center; font-weight: bold"></p>
+    </div>
+    <script src="./index.js"></script>
+  </body>
+</html>
